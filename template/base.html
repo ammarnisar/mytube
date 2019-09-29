@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+	<meta charset="UTF-8">
+	<title>Video</title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+	<!-- Style Sheets -->
+    <link rel='stylesheet' href="{% static 'css/bootstrap.min.css' %}">
+{#	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">#}
+	<!-- Font Icons -->
+    <link rel="stylesheet " href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel='stylesheet' href="{% static 'css/font-awesome.min.css' %}">
+
+    <link rel='stylesheet' href="{% static 'css/ionicons.min.css' %}">
+
+    <link rel='stylesheet' href="{% static 'css/socicon-styles.css' %}">
+
+    <link rel='stylesheet' href="{% static 'css/hover-min.css' %}">
+    <link rel='stylesheet' href="{% static 'css/animate.css' %}">
+    <link rel='stylesheet' href="{% static 'css/css-menu.css' %}">
+    <link rel='stylesheet' href="{% static 'css/owl.carousel.css' %}">
+    <link rel='stylesheet' href="{% static 'css/loader.css' %}">
+
+    <link rel='stylesheet' href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+<script src="{% static 'js/jquery-1.12.3.min.js' %}"></script>
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<!-- Main Bar-->
+	<div id="main-bar">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-sm-5 col-xs-6 border-right">
+					<div class="logo">
+						<a href="index.html">
+{#							<img class="img-responsive" src="static/images/logo.png" alt="Logo">#}
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-7 col-xs-6 hidden-md hidden-lg text-right">
+					<button type="button" class="btn btn-default btn-create-album">
+						Create Album
+					</button>
+				</div>
+				<div class="clearfix visible-sm"></div>
+				<div class="clearfix visible-xs"></div>
+				<div class="col-md-6 col-sm-4 border-right sm-border-top">
+					<div class="search-box">
+						<form method="post">
+							<input type="text" name="search" id="search" class="form-control" placeholder="Search Albums" required>
+							<button type="submit" class="search-icon">
+								<i class="fa fa-search"></i>
+							</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-4 sm-border-top">
+					<div class="social-icon">
+						<ul class="list-inline list-unstyled">
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-4 border-left sm-border-top">
+					<div class="login">
+						<div class="media">
+							<div class="media-left">
+{#								<img class="img-responsive play-svg svg" src="static/images/user.svg" alt="play" onerror="this.src='static/images/user.png'">#}
+							</div>
+							<div class="media-body">
+								<p>
+
+                                    {% if user.is_authenticated %}
+                                      Welcome Guest {{ user.username }}   <a class="logout-toggle" href="{% url 'logout' %}">Logout</a>
+                                        <a href="">Edit Profile</a>
+                                        {% else %}
+                                         <a class="login-toggle" href="#">Login</a>
+                                    {% endif %}
+
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Main Bar -->
+
+    <!-- Main Navigation -->
+	<div id="main-navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-sm-12">
+					<div id="cssmenu">
+						<ul>
+						   <li class="active"><a href="#"><i class="fi ion-ios-home"></i>Home</a>
+							  <ul>
+							  	<li><a href="index.html">Home V1</a>
+									<ul>
+										<li><a href="index.html">Home V1</a></li>
+										<li><a href="index-left-sidebar.html">With Left Sidebar</a></li>
+										<li><a href="index-without-sidebar.html">Without Sidebar</a></li>
+									</ul>
+							  	</li>
+							  	<li><a href="http://layerstheme.com/developers/jamshaid/video-demo/video-v2/index-v2.html">Home V2</a>
+                                <ul>
+											<li><a href="http://layerstheme.com/developers/jamshaid/video-demo/video-v2/index-v2.html">Home V2</a></li>
+											<li><a href="http://layerstheme.com/developers/jamshaid/video-demo/video-v2/index-left-sidebar.html">With Left Sidebar</a></li>
+											<li><a href="http://layerstheme.com/developers/jamshaid/video-demo/video-v2/index-without-sidebar.html">Without Sidebar</a></li>
+										</ul>
+                                </li>
+							  </ul>
+						   </li>
+						   <li><a href="#"><i class="fi ion-ios-film-outline"></i>Video Styles</a>
+						   	  <ul>
+							  	<li><a href="video-2-column.html">Video 2 Column</a></li>
+							  </ul>
+						   </li>
+						   <li><a href="#"><i class="fi ion-android-apps"></i>Category</a>
+								<ul>
+									<li><a href="categories.html">Categories</a></li>
+								</ul>
+						   </li>
+						   <li><a href="#"><i class="fi ion-compose"></i>Blog</a>
+								<ul>
+									<li><a href="blog-grid.html">Blog Grid Style</a></li>
+								</ul>
+						   </li>
+						   <li><a href="tv.html"><i class="fi ion-android-desktop"></i>Tv</a></li>
+						   <li><a href="about.html"><i class="fi ion-person"></i>About</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-2 text-right hidden-sm hidden-xs">
+					<button type="button" class="btn btn-default btn-create-album">
+						Create Album
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Main Navigation -->
+
+    <hr>
+
+    	<script type="text/javascript">
+
+		{#$(document).ready(function(){#}
+		{#	$('.send-form').validate({#}
+		{#		submitHandler: function(){#}
+		{#			var curForm = $('.send-form');#}
+		{#			$("<div />").addClass("formOverlay").appendTo(curForm);#}
+        {##}
+		{#				 $.ajax({#}
+		{#					url: 'mail.php',#}
+		{#					type: 'POST',#}
+		{#					data: curForm.serialize(),#}
+		{#					success: function(data) {#}
+		{#					var res=data.split("::");#}
+		{#					curForm.find("div.formOverlay").remove();#}
+		{#					curForm.prev('.expMessage').html(res[1]);#}
+		{#					if(res[0]=='Success')#}
+		{#					{#}
+		{#					   curForm.remove();#}
+		{#					   curForm.prev('.expMessage').html('');#}
+		{#					}#}
+		{#				  }#}
+		{#				 });#}
+		{#			return false;#}
+		{#		}#}
+		{#	})#}
+	</script>
+{% block content %}
+{% endblock %}
+
+</body>
+</html>

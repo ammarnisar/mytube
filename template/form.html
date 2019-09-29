@@ -1,0 +1,51 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load widget_tweaks %}
+
+<div class="container " style="margin-top: 20px" >
+
+ <form method="post">
+    {% csrf_token %}
+{#    {% for filed in form %}#}
+{#        {{ filed.label_tag }}#}
+{#        {{ filed }}#}
+{#        {{ filed.errors }}#}
+{#    {% endfor %}#}
+{##}
+{#    {% for hidden in form.hidden_fields %}#}
+{#  {{ hidden }}#}
+{#{% endfor %}#}
+
+{% for field in form %}
+  <div class="form-group">
+    <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+    {{ field|add_class:'form-control' }}
+    {% for error in field.errors %}
+      <span class="help-block">{{ error }}</span>
+    {% endfor %}
+  </div>
+{% endfor %}
+
+    <button type="submit">Submit</button>
+</form>
+</div>
+
+
+<script>
+    $("#id_status").removeClass("form-control");
+
+</script>
+
+{% endblock %}
