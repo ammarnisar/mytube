@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bb88fd1-c3c0-449c-8a11-0731046d4c8f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mytube/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mytube/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +56,8 @@
           <entry key="gitignore" value="1" />
           <entry key="html" value="11" />
           <entry key="js" value="1" />
-          <entry key="py" value="53" />
+          <entry key="py" value="54" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -62,16 +65,16 @@
           <entry key="CSS" value="13" />
           <entry key="HTML" value="11" />
           <entry key="JavaScript" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="53" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Django Console" value="38" />
-          <entry key="gitignore" value="7" />
+          <entry key="gitignore" value="8" />
           <entry key="html" value="2454" />
-          <entry key="py" value="4148" />
+          <entry key="py" value="4172" />
           <entry key="py@mytube" value="5" />
         </counts>
       </usages-collector>
@@ -79,8 +82,8 @@
         <counts>
           <entry key="CommandLine" value="5" />
           <entry key="HTML" value="2454" />
-          <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="4186" />
+          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="Python" value="4210" />
         </counts>
       </usages-collector>
     </session>
@@ -90,22 +93,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mytube/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/videochannel/tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#24#63#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="141">
+              <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -122,11 +114,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="30">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -258,11 +259,11 @@
         <option value="$PROJECT_DIR$/template/base.html" />
         <option value="$PROJECT_DIR$/videochannel/url.py" />
         <option value="$PROJECT_DIR$/template/video-detail.html" />
-        <option value="$PROJECT_DIR$/mytube/settings.py" />
         <option value="$PROJECT_DIR$/videochannel/serializers.py" />
         <option value="$PROJECT_DIR$/videochannel/models.py" />
         <option value="$PROJECT_DIR$/videochannel/views.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/mytube/settings.py" />
       </list>
     </option>
   </component>
@@ -289,6 +290,11 @@
           <expand>
             <path>
               <item name="mytube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytube" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytube" type="462c0819:PsiDirectoryNode" />
               <item name="mytube" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -670,13 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mytube/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/videochannel/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -751,8 +750,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytube/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
         </state>
       </provider>
     </entry>
